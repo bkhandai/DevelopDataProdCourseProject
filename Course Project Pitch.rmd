@@ -1,0 +1,37 @@
+---
+title:  "Developing Data Products Course Project"
+author: "Biswajit Khandai"
+date:   "January 10, 2019"
+output: ioslides_presentation
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+##Links to the Shiny Application
+
+- The shiny application pitched in this presentation is here [https://bkhandai.shinyapps.io/finalproject/]
+
+- The Shiny app source code is here [https://github.com/bkhandai/DevelopDataProdCourseProject]
+
+##What does the Shiny Application do ?
+- Predict the MPG of a car using Horsepower and Weight as inputs.
+
+- You can use sliders to select the two input parameters.
+
+- The application interactively recalculates the predicted MPG.
+
+##Algorithm used
+- The mtcars data set is used
+
+- linear model is created for MPG using weight and horsepower.
+
+- Prediction is done using the linear model.
+
+
+##Caveat to the Math !
+- The relationship between Weight and MPG is not really linear, nor is the relationship between Horsepower and MPG. The linear model is just a convenient tool used in this case. Far outside the reasonable ranges of Horsepower and Weight settings, this model will predict negative MPG !!!
+
+
+
